@@ -1,0 +1,21 @@
+/******************************************************/
+/**************** 4 - OPINION *************************/
+/******************************************************/
+
+.opinions{
+	.container{
+		padding-top: 40px;
+		padding-bottom:40px;
+		.op-text{
+			width: 80%;
+			margin:auto;
+			p{
+				font-style: italic;
+				text-align: center;
+				color: $text;
+				font-size:14px;
+				display: none;
+			}
+		}
+	}
+}

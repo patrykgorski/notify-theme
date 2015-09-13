@@ -1,10 +1,3 @@
-@import "varible";
-@import "front";
-@import "mobileFront";
-@import "overview";
-@import "mobileOverview";
-
-
 /*
 
 1 - FRONT BIG WRAPPER
@@ -16,5 +9,17 @@
 	2.2 - Hover - Ico:
 	2.3 - ico-box
 
+3. - NEWSLETTER
+
+4. - OPINION
+
 */
 
+@import "varible";
+@import "front";
+@import "mobileFront";
+@import "overview";
+@import "mobileOverview";
+@import "newsletter";
+@import "mobileNewsletter";
+@import "opinion";

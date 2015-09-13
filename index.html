@@ -91,6 +91,43 @@
     </div>
 </section>
 
+<section class="newsletter">
+    <div class="container row">
+        <div class="medium-6 columns n-box">
+            <h4>Get Notified Of Any Updates!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi maiores eaque culpa error facere illum alias maxime, dolor ipsa distinctio, sed iste debitis eos veniam nesciunt dolorum dolore quae. Quam atque, eveniet consectetur culpa?</p>
+            <div class="row collapse">
+                <div class="small-9 columns">
+                    <input type="text" placeholder="E-mail">
+                </div>
+
+                <div class="small-3 columns">
+                    <a href="#" class="button postfix">Notify</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="medium-6 columns n-box">
+            <div class="flex-video widescreen vimeo">
+              <iframe src="http://player.vimeo.com/video/60122989" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="opinions">
+    <div class="container row">
+        <div class="op-text">
+            
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse obcaecati deleniti modi quaerat assumenda culpa distinctio sequi perspiciatis nobis accusantium. Ullam hic dolores ut! Cumque debitis molestias natus alias aliquid error optio eaque eos laudantium ad, esse voluptate, cum illo sunt, doloribus impedit magni nesciunt voluptatem maxime rerum non. Quibusdam."</p>
+            
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam tempore numquam architecto adipisci, minima nisi modi perferendis error enim eveniet dignissimos, fuga nobis sequi illum, rem. Perferendis ratione tempora inventore!"</p>
+            
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis possimus quos aspernatur nobis consequuntur optio, autem ex perferendis labore esse, ad explicabo illo veniam adipisci. Neque deleniti beatae, quidem voluptas dolorum dignissimos veniam ipsa, id voluptatem, fuga, dicta impedit obcaecati tempora praesentium assumenda aut qui."</p>
+        </div>
+    </div>
+</section>
+
 <br>
 <br>
 <br>
@@ -129,6 +166,20 @@
     <script src="js/notifyAnimate.js"></script>
     <script>
       $(document).foundation();
+        
+        /* Head slide (slide-text p)*/
+        var headerSlide = new slideText();
+        headerSlide.slideStartFun(".slide-text p"); // Element
+        headerSlide.slideAnimationTime = 200; // Time animation default 500 ms
+        headerSlide.slideTime = 3000; // How long slide show default 4000 ms 
+        headerSlide.slideStart = 0; // What first slide
+
+        /*Opinion text animation (.op-text p)*/
+        var opinionSlide = new slideText();
+        opinionSlide.slideStartFun(".op-text p"); // Element
+        opinionSlide.slideAnimationTime = 500; // Time animation default 500 ms
+        opinionSlide.slideTime = 10000; // How long slide show default 4000 ms 
+        opinionSlide.slideStart = 0; // What first slide
     </script>
     </body>
 </html>

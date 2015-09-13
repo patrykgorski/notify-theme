@@ -1,3 +1,19 @@
+/*
+
+1 - FRONT BIG WRAPPER
+	1.1 - Mobile fone box
+	1.2 - Slide info box
+
+2. - OVERVIEW
+	2.1 - O - box
+	2.2 - Hover - Ico:
+	2.3 - ico-box
+
+3. - NEWSLETTER
+
+4. - OPINION
+
+*/
 /*DEVICE SIZE*/
 /* COLORS */
 @keyframes preload-mobile {
@@ -291,17 +307,55 @@ ul, ol {
   /******************************************************/
   .container {
     width: 100%; } }
-/*
+/******************************************************/
+/**************** 3 - NEWSLETTER **********************/
+/******************************************************/
+.newsletter {
+  background-color: #E3E3E3; }
+  .newsletter .container {
+    padding-top: 25px;
+    padding-bottom: 10px; }
+    .newsletter .container .n-box {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      .newsletter .container .n-box h4 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #222;
+        padding-top: 15px; }
+      .newsletter .container .n-box p {
+        color: #848484; }
+      .newsletter .container .n-box div > .button {
+        width: 100%;
+        padding: 0;
+        background-color: #2DCC70;
+        border-color: #24AD5E;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px; }
+      .newsletter .container .n-box div > input {
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px; }
 
-1 - FRONT BIG WRAPPER
-	1.1 - Mobile fone box
-	1.2 - Slide info box
-
-2. - OVERVIEW
-	2.1 - O - box
-	2.2 - Hover - Ico:
-	2.3 - ico-box
-
-*/
+@media (max-width: 1024px) {
+  /******************************************************/
+  /**************** 2 - NEWSLETTER mobile ***************/
+  /******************************************************/
+  .container {
+    width: 100%; } }
+/******************************************************/
+/**************** 4 - OPINION *************************/
+/******************************************************/
+.opinions .container {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .opinions .container .op-text {
+    width: 80%;
+    margin: auto; }
+    .opinions .container .op-text p {
+      font-style: italic;
+      text-align: center;
+      color: #848484;
+      font-size: 14px;
+      display: none; }
 
 /*# sourceMappingURL=style.css.map */
