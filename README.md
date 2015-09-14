@@ -1,4 +1,4 @@
-# Notify Theme (RWD) - still working
+# Notify Theme (RWD) v1.0
 ---
 
 Graphic project and files PSD by Michael Reimer | www.bestpsdfreebies.com \
@@ -37,8 +37,13 @@ Java Script:
         headerSlide.slideStart = 0; // What first slide
 ```
 
+#### Changelog:
+```
+	v1.0 - End of the work :)
+```
 
-### Libraries/Freemwork's:
+
+### Libraries/Freemwork:
 
  * [jQuery](https://jquery.com)
  * [Notify PSD Theme](http://graphicburger.com/notify-psd-theme/) 

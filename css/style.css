@@ -1,5 +1,6 @@
+@charset "UTF-8";
 /*
-
+Notify Theme RWD code - v1.0 Patryk G├│rski (gorskipatryk.pl)
 1 - FRONT BIG WRAPPER
 	1.1 - Mobile fone box
 	1.2 - Slide info box
@@ -368,51 +369,20 @@ ul, ol {
       font-size: 14px;
       display: none; }
   .opinions .container .people h4 {
-    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
-    text-weight: bold;
-    font-size: 20px; }
-  .opinions .container .people .people-container {
-    height: 50px;
-    width: 260px;
-    overflow: hidden;
-    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif; }
+  .opinions .container .people ul {
+    text-align: center;
     position: relative; }
-    .opinions .container .people .people-container .fade-left {
-      position: absolute;
-      z-index: 10;
-      width: 50px;
-      height: 50px;
-      background: -moz-linear-gradient(left, white 22%, rgba(255, 255, 255, 0.51) 60%, rgba(255, 255, 255, 0) 100%);
-      background: -webkit-gradient(linear, left top, right top, color-stop(22%, white), color-stop(60%, rgba(255, 255, 255, 0.51)), color-stop(100%, rgba(255, 255, 255, 0)));
-      background: -webkit-linear-gradient(left, white 22%, rgba(255, 255, 255, 0.51) 60%, rgba(255, 255, 255, 0) 100%);
-      background: -o-linear-gradient(left, white 22%, rgba(255, 255, 255, 0.51) 60%, rgba(255, 255, 255, 0) 100%);
-      background: -ms-linear-gradient(left, white 22%, rgba(255, 255, 255, 0.51) 60%, rgba(255, 255, 255, 0) 100%);
-      background: linear-gradient(to right, white 22%, rgba(255, 255, 255, 0.51) 60%, rgba(255, 255, 255, 0) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); }
-    .opinions .container .people .people-container .fade-right {
-      position: absolute;
-      right: 0;
-      z-index: 10;
-      width: 50px;
-      height: 50px;
-      background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 72%, white 75%);
-      background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(72%, white), color-stop(75%, white));
-      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 72%, white 75%);
-      background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 72%, white 75%);
-      background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 72%, white 75%);
-      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 72%, white 75%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); }
-    .opinions .container .people .people-container .p-box {
-      width: 50px;
-      height: 50px;
+    .opinions .container .people ul li {
       display: inline-block;
-      margin-left: 5px;
-      cursor: pointer;
-      z-index: 2;
+      width: 50px;
+      height: 50px;
       position: relative;
-      float: left; }
-      .opinions .container .people .people-container .p-box .load-opinion {
+      cursor: pointer; }
+      .opinions .container .people ul li .load-opinion {
         z-index: 4;
         position: absolute;
         width: 100%;
@@ -423,7 +393,7 @@ ul, ol {
         -moz-transition: all 0.3s cubic-bezier(0.79, 0.05, 0.21, 0.73);
         -ms-transition: all 0.3s cubic-bezier(0.79, 0.05, 0.21, 0.73);
         -webkit-transition: all 0.3s cubic-bezier(0.79, 0.05, 0.21, 0.73); }
-      .opinions .container .people .people-container .p-box:hover .load-opinion {
+      .opinions .container .people ul li:hover .load-opinion {
         display: block; }
 
 /******************************************************/

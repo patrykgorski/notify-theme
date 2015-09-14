@@ -1,22 +1,9 @@
 /*
-DOC.animate
+Notify Theme RWD code - v1.0 Patryk Górski (gorskipatryk.pl)
 1, Preloaders
 2. SliderText
-3. SlideMobile
+3. AnimationHuman
 */
-
-/**DEBUG**/
-
-function c(text){
-	return console.log(text);
-}
-
-function a(text){
-	return alert(text);
-}
-
-
-/**END_DEBUG**/
 
 /* 0. Load start function */
 $(window).load(function(){
@@ -74,9 +61,15 @@ function slideText(){
 }
 /* END TEXTANIMATON */
 
-$('.people-container .p-box').on('mouseover', function(){
-	var x = $(this).find('img').attr('title');
-	$(this).parent().parent().find('h4').stop().fadeOut(300, function(){
-		$(this).parent().parent().find('h4').text(x).stop().fadeIn(300);
-	});
-})
+
+/* Animation human name */
+$('.people ul li').on('mouseover', function(){
+	var titleHuman = $(this).find('img').attr('title'),
+		lastTitleHuman = $(this).parent().parent().find('h4');
+		if(lastTitleHuman.text()!=titleHuman){
+			lastTitleHuman.stop().fadeOut(300, function(){
+				lastTitleHuman.stop().text(titleHuman).fadeIn(300)
+			});
+		}
+});
+/* END ANIMATION HUMAN NAME*/
