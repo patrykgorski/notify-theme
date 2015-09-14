@@ -23,8 +23,8 @@ $(window).load(function(){
 	preloaders.preloaderMobileOff();
 });
 
-/* 1. PRELOADERS */
 
+/* 1. PRELOADERS */
 var preloaders = {
 	preloaderMobileOff: function(){
 		$('.mobile-preloader').velocity({ left:'-101%'  }, [ 0.94, 0, 0.1, 0.81], 1500, function(){
@@ -37,10 +37,10 @@ var preloaders = {
 		});
 	}
 }
-
 /* END PRELOADERS */
 
-/* 2. Slide*/
+
+/* 2. TextAnimation */
 function slideText(){
 	this.slideStart = this.slideStart || 0,
 	this.slideAnimationTime = this.slideAnimationTime || 500,
@@ -72,51 +72,11 @@ function slideText(){
 		});
 	}
 }
+/* END TEXTANIMATON */
 
-/*
-$('.slide-text p').eq(headerSlide.slideStart).fadeIn(300, function(){
-	setTimeout(function(){
-		headerSlide.slide(".slide-text p", headerSlide);
-	}, headerSlide.slideTime);
-});
-
-$('.op-text p').eq(opinionSlide.slideStart).fadeIn(300, function(){
-	setTimeout(function(){
- 		opinionSlide.slide(".op-text p", opinionSlide);
- 	}, opinionSlide.slideTime);
- });
-
-/* END SLIDE */
-
-/*
-var slideText = {
-	slideStart:this.slideStart || 0,
-	slideAnimationTime:this.slideAnimationTime || 500,
-	slideTime:this.slideTime || 4000,
-	slideTypeAnimations:'',
-	slideLength:0,
-	slide:function(s){
-		this.slideLength = $(s).length;
-		$(s).eq(slideText.slideStart).fadeOut(slideText.slideAnimationTime, function(){
-			if(slideText.slideLength-1<=slideText.slideStart){
-				slideText.slideStart=0;	
-			}else{
-				slideText.slideStart++;
-			}
-
-			$(s).eq(slideText.slideStart).fadeIn(slideText.slideAnimationTime, function(){
-				setTimeout(function(){
-					slideText.slide(".slide-text p");
-				}, slideText.slideTime);
-			});
-		});
-	}
-}
-
-$('.slide-text p').eq(slideText.slideStart).fadeIn(300, function(){
-	setTimeout(function(){
-		slideText.slide(".slide-text p");
-	}, 2000);
-});
-*/
-
+$('.people-container .p-box').on('mouseover', function(){
+	var x = $(this).find('img').attr('title');
+	$(this).parent().parent().find('h4').stop().fadeOut(300, function(){
+		$(this).parent().parent().find('h4').text(x).stop().fadeIn(300);
+	});
+})

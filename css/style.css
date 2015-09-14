@@ -13,6 +13,10 @@
 
 4. - OPINION
 
+5. - SOCIAL
+
+6. - FOOTER
+
 */
 /*DEVICE SIZE*/
 /* COLORS */
@@ -95,7 +99,7 @@ ul, ol {
         overflow: hidden;
         color: #000; }
         .front-big-warpper .front-container .mobie-fone-box .mobile .mobile-preloader {
-          position: relative;
+          position: absolute;
           width: 100%;
           height: 100%;
           background-color: #2DCC70; }
@@ -133,7 +137,8 @@ ul, ol {
 /******************************************************/
 .slide-info-box {
   position: absolute;
-  top: 20%; }
+  top: 20%;
+  font-family: 'Source Sans Pro', sans-serif; }
 
 .logo {
   transition: all 0.3s cubic-bezier(0.79, 0.05, 0.21, 0.73);
@@ -275,7 +280,8 @@ ul, ol {
   padding-bottom: 10px; }
 
 .container {
-  width: 1024px; }
+  width: 1024px;
+  font-family: 'Source Sans Pro', sans-serif; }
   .container .o-box {
     margin-bottom: 40px; }
     .container .o-box h4 {
@@ -283,7 +289,8 @@ ul, ol {
       font-weight: bold;
       text-align: center;
       color: #222;
-      padding-top: 15px; }
+      padding-top: 15px;
+      font-family: 'Source Sans Pro', sans-serif; }
     .container .o-box p {
       text-align: center;
       color: #848484; }
@@ -322,9 +329,11 @@ ul, ol {
         font-size: 20px;
         font-weight: bold;
         color: #222;
-        padding-top: 15px; }
+        padding-top: 15px;
+        font-family: 'Source Sans Pro', sans-serif; }
       .newsletter .container .n-box p {
-        color: #848484; }
+        color: #848484;
+        font-family: 'Source Sans Pro', sans-serif; }
       .newsletter .container .n-box div > .button {
         width: 100%;
         padding: 0;
@@ -350,12 +359,118 @@ ul, ol {
   padding-bottom: 40px; }
   .opinions .container .op-text {
     width: 80%;
-    margin: auto; }
+    margin: auto;
+    font-family: 'Source Sans Pro', sans-serif; }
     .opinions .container .op-text p {
       font-style: italic;
       text-align: center;
       color: #848484;
       font-size: 14px;
       display: none; }
+  .opinions .container .people h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    text-weight: bold;
+    font-size: 20px; }
+  .opinions .container .people .people-container {
+    height: 50px;
+    width: 260px;
+    overflow: hidden;
+    margin: auto;
+    position: relative; }
+    .opinions .container .people .people-container .fade-left {
+      position: absolute;
+      z-index: 10;
+      width: 50px;
+      height: 50px;
+      background: -moz-linear-gradient(left, white 22%, rgba(255, 255, 255, 0.51) 60%, rgba(255, 255, 255, 0) 100%);
+      background: -webkit-gradient(linear, left top, right top, color-stop(22%, white), color-stop(60%, rgba(255, 255, 255, 0.51)), color-stop(100%, rgba(255, 255, 255, 0)));
+      background: -webkit-linear-gradient(left, white 22%, rgba(255, 255, 255, 0.51) 60%, rgba(255, 255, 255, 0) 100%);
+      background: -o-linear-gradient(left, white 22%, rgba(255, 255, 255, 0.51) 60%, rgba(255, 255, 255, 0) 100%);
+      background: -ms-linear-gradient(left, white 22%, rgba(255, 255, 255, 0.51) 60%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to right, white 22%, rgba(255, 255, 255, 0.51) 60%, rgba(255, 255, 255, 0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); }
+    .opinions .container .people .people-container .fade-right {
+      position: absolute;
+      right: 0;
+      z-index: 10;
+      width: 50px;
+      height: 50px;
+      background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 72%, white 75%);
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(72%, white), color-stop(75%, white));
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 72%, white 75%);
+      background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 72%, white 75%);
+      background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 72%, white 75%);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 72%, white 75%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); }
+    .opinions .container .people .people-container .p-box {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      margin-left: 5px;
+      cursor: pointer;
+      z-index: 2;
+      position: relative;
+      float: left; }
+      .opinions .container .people .people-container .p-box .load-opinion {
+        z-index: 4;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(45, 204, 112, 0.5);
+        display: none;
+        transition: all 0.3s cubic-bezier(0.79, 0.05, 0.21, 0.73);
+        -moz-transition: all 0.3s cubic-bezier(0.79, 0.05, 0.21, 0.73);
+        -ms-transition: all 0.3s cubic-bezier(0.79, 0.05, 0.21, 0.73);
+        -webkit-transition: all 0.3s cubic-bezier(0.79, 0.05, 0.21, 0.73); }
+      .opinions .container .people .people-container .p-box:hover .load-opinion {
+        display: block; }
+
+/******************************************************/
+/**************** 5 - SOCIAL **************************/
+/******************************************************/
+.social {
+  padding-bottom: 20px; }
+  .social .container h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px; }
+  .social .container p {
+    font-size: 14px;
+    text-align: center;
+    color: #848484; }
+  .social .container ul {
+    text-align: center; }
+    .social .container ul li {
+      display: inline-block;
+      background-color: #E3E3E3;
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      text-align: center;
+      line-height: 40px; }
+      .social .container ul li a {
+        color: #fff; }
+      .social .container ul li:hover {
+        background-color: #2DCC70; }
+
+/******************************************************/
+/**************** 4 - FOOTER **************************/
+/******************************************************/
+footer {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #E3E3E3; }
+  footer nav ul {
+    text-align: center; }
+    footer nav ul li {
+      display: inline-block;
+      padding: 0 15px; }
+      footer nav ul li a {
+        color: #848484; }
 
 /*# sourceMappingURL=style.css.map */
