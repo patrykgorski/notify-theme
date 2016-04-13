@@ -28,7 +28,7 @@ index.html:
 ```
 
 #### Tutorial 2. Edit animation:
-Java Script:
+JavaScript:
 ```javascript
         var headerSlide = new slideText();
         headerSlide.slideStartFun(".slide-text p"); // Element
@@ -39,7 +39,7 @@ Java Script:
 
 #### Changelog:
 ```
-	v1.0 - End of the work :)
+	v1.0 - End work :)
 ```
 
 
